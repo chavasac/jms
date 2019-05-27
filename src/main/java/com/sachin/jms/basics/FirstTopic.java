@@ -23,7 +23,6 @@ public class FirstTopic {
 		
 		MessageConsumer consumer1 = session.createConsumer(topic);
 		MessageConsumer consumer2 = session.createConsumer(topic);
-		
 		TextMessage textMessage = session.createTextMessage("I am the creator of this topic to which you are listening to");
 		
 		producer.send(textMessage);
