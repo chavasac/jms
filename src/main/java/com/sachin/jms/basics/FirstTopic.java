@@ -28,8 +28,8 @@ public class FirstTopic {
 		
 		con.start();
 		
-		TextMessage messageReceived1 = (TextMessage) consumer1.receive(1000);
-		TextMessage messageReceived2 = (TextMessage) consumer2.receive(1000);
+		TextMessage messageReceived1 = (TextMessage) consumer1.receive(5000);
+		TextMessage messageReceived2 = (TextMessage) consumer2.receive(5000);
 		System.out.println("Message received by consumer 1 : " + messageReceived1.getText());
 		System.out.println("Message received by consumer 2 : " + messageReceived2.getText());
 		
